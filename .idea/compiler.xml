@@ -2,16 +2,26 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ssm_02" />
         <module name="springmvc_01" />
+        <module name="SSMSpringBootDemo" />
+        <module name="redis_ks" />
+        <module name="ssm_03" />
+        <module name="aopDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ssm_01" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SSMSpringBootDemo" options="-parameters" />
+    </option>
   </component>
 </project>

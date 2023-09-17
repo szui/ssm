@@ -1,8 +1,8 @@
 package com.szui.controller;
 
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Author:szui
@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @Description:
  */
 
-@Controller
+@RestController
+@RequestMapping("/books")
 public class UserController {
 
-    @RequestMapping("/save")
-    @ResponseBody
+    @PostMapping
     public String save(){
         System.out.println("user save().....");
         return "{model:springmvc}";

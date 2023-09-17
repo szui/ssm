@@ -14,7 +14,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 * 需要扫描到包
 */
 @Configuration
-@ComponentScan("com.szui.controller")
+@ComponentScan({"com.szui.controller","com.szui.config"})
 @EnableWebMvc
 public class SpringMvcConfig {
 }

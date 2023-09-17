@@ -32,13 +32,7 @@ public class ServletContainerInitConfig extends AbstractAnnotationConfigDispatch
         return new String[]{"/"};
     }
 
-    @Override
-    protected Filter[] getServletFilters() {
 
-        CharacterEncodingFilter filter = new CharacterEncodingFilter();
-        filter.setEncoding("utf-8");
-        return new Filter[]{filter};
-    }
 }
 
 

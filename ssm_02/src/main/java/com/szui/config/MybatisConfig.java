@@ -21,7 +21,7 @@ public class MybatisConfig {
         return sqlSessionFactoryBean;
     }
 
-
+    @Bean
     public MapperScannerConfigurer mapperScannerConfigurer(){
         MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
 

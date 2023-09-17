@@ -12,8 +12,7 @@ import org.springframework.context.annotation.PropertySource;
  */
 @Configuration
 @ComponentScan({"com.szui.service","com.szui.dao"})
-@PropertySource("jdbc.properties")
-/*报错再加classpath:*/
+@PropertySource("classpath:jdbc.properties")
 @Import({JdbcConfig.class,MybatisConfig.class})
 public class SpringConfig {
 }
